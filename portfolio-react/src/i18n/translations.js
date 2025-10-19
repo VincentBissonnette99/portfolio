@@ -1,7 +1,7 @@
 export const translations = {
   fr: {
     // Nav et sections
-    nav_projects: "Projets",
+    nav_projects: "Jeu interactif",
     nav_cv: "CV",
     nav_contact: "Contact",
     featured_projects: "Projets en vedette",
@@ -13,7 +13,7 @@ export const translations = {
     // Hero
     hero_title: "Bienvenue sur mon portfolio",
     hero_subtitle: "Développeur, étudiant en informatique et génie logiciel",
-    hero_cta_projects: "Projets en vedette",
+    hero_cta_projects: "Jeu interactif",
     hero_cta_contact: "Contact",
     badge_langs: "FR, EN",
     badge_stack: "React, Vite, Tailwind",
@@ -36,7 +36,7 @@ export const translations = {
 
   en: {
     // Nav et sections
-    nav_projects: "Projects",
+    nav_projects: "Interractive game",
     nav_cv: "Resume",
     nav_contact: "Contact",
     featured_projects: "Featured Projects",
@@ -48,7 +48,7 @@ export const translations = {
     // Hero
     hero_title: "Welcome to my portfolio",
     hero_subtitle: "Developer, Computer Science and Software Engineering student",
-    hero_cta_projects: "Featured Projects",
+    hero_cta_projects: "Interractive game",
     hero_cta_contact: "Contact",
     badge_langs: "FR, EN",
     badge_stack: "React, Vite, Tailwind",

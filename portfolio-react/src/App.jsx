@@ -48,8 +48,8 @@ export default function App() {
           <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">{t("contact_title")}</h2>
           <p>
             {t("contact_line")}
-            <a className="underline" href="mailto:vincent.bissonnette99@gmail.com">
-              vincent.bissonnette99@gmail.com
+            <a className="underline" href="mailto:vincentbissonnette86@gmail.com">
+              vincentbissonnette86@gmail.com
             </a>
           </p>
         </section>

@@ -4,7 +4,7 @@ import { useLanguage } from "../i18n/LanguageContext";
 export default function Hero() {
   const { t } = useLanguage();
   return (
-    <section className="relative overflow-hidden rounded-3xl border bg-gradient-to-br from-indigo-600 via-purple-600 to-fuchsia-600 text-white">
+    <section className="relative overflow-hidden rounded-3xl border bg-gradient-to-br from-red-600 via-orange-600 to-yellow-600 text-white">
       <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
       <div className="absolute -bottom-20 -left-16 h-72 w-72 rounded-full bg-black/10 blur-3xl" />
       <div className="relative p-8 sm:p-12">

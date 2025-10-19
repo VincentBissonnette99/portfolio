@@ -26,6 +26,15 @@ export const translations = {
     badge_stack: "React, Vite, Tailwind",
     lang_fr: "Français",
     lang_en: "English",
+
+    // Contact
+    contact_page_title: "Contact",
+    contact_intro: "Tu peux me joindre ici. Mes profils publics sont aussi disponibles.",
+    contact_email_label: "Courriel",
+    contact_linkedin_label: "LinkedIn",
+    contact_github_label: "GitHub",
+    contact_linkedin_url: "https://www.linkedin.com/in/vincentbissonnette2899",
+    contact_github_url: "https://github.com/VincentBissonnette99",
   },
 
   en: {
@@ -52,5 +61,13 @@ export const translations = {
     badge_stack: "React, Vite, Tailwind",
     lang_fr: "Français",
     lang_en: "English",
+
+    contact_page_title: "Contact",
+    contact_intro: "You can reach me here. My public profiles are also available.",
+    contact_email_label: "Email",
+    contact_linkedin_label: "LinkedIn",
+    contact_github_label: "GitHub",
+    contact_linkedin_url: "https://www.linkedin.com/in/vincentbissonnette2899",
+    contact_github_url: "https://github.com/VincentBissonnette99",
   },
 };

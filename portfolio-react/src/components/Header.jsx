@@ -13,14 +13,24 @@ export default function Header() {
             VB
           </div>
           <div>
-            <h1 className="text-lg sm:text-xl font-semibold leading-tight">Vincent Bissonnette</h1>
-            <p className="text-xs sm:text-sm text-gray-600">{t("hero_subtitle")}</p>
+            <h1 className="text-lg sm:text-xl font-semibold leading-tight">
+              Vincent Bissonnette
+            </h1>
+            <p className="text-xs sm:text-sm text-gray-600">
+              {t("hero_subtitle")}
+            </p>
           </div>
         </div>
         <nav className="hidden sm:flex gap-6 text-sm">
-          <a href="#projects" className="hover:text-gray-900 text-gray-600">{t("nav_projects")}</a>
-          <a href="#cv" className="hover:text-gray-900 text-gray-600">{t("nav_cv")}</a>
-          <a href="#contact" className="hover:text-gray-900 text-gray-600">{t("nav_contact")}</a>
+          <a href="#projects" className="hover:text-gray-900 text-gray-600">
+            {t("nav_projects")}
+          </a>
+          <a href="#cv" className="hover:text-gray-900 text-gray-600">
+            {t("nav_cv")}
+          </a>
+          <a href="#/contact" className="hover:text-gray-900 text-gray-600">
+            {t("nav_contact")}
+          </a>
         </nav>
         <LanguageToggle />
       </div>

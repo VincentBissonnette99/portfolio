@@ -10,7 +10,11 @@ export default function LanguageToggle() {
     <button
       onClick={toggle}
       className="rounded-xl border px-3 py-1 text-sm hover:bg-gray-50"
-      aria-label={lang === "fr" ? "Switch language to English" : "Changer la langue en français"}
+      aria-label={
+        lang === "fr"
+          ? "Switch language to English"
+          : "Changer la langue en français"
+      }
       title={lang === "fr" ? t("lang_en") : t("lang_fr")}
     >
       {lang === "fr" ? "EN" : "FR"}

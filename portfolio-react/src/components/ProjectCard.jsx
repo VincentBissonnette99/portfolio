@@ -1,7 +1,12 @@
 import React from "react";
 import { useLanguage } from "../i18n/LanguageContext";
 
-export default function ProjectCard({ title, description, tags = [], link = "#" }) {
+export default function ProjectCard({
+  title,
+  description,
+  tags = [],
+  link = "#",
+}) {
   const { t } = useLanguage();
   return (
     <article className="group rounded-2xl border bg-white p-5 shadow-sm hover:shadow-md transition relative">
@@ -25,7 +30,12 @@ export default function ProjectCard({ title, description, tags = [], link = "#" 
         >
           {t("view_project")}
           <svg viewBox="0 0 24 24" className="h-4 w-4">
-            <path d="M7 17L17 7M17 7H9M17 7v8" fill="none" stroke="currentColor" strokeWidth="2" />
+            <path
+              d="M7 17L17 7M17 7H9M17 7v8"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            />
           </svg>
         </a>
       </div>

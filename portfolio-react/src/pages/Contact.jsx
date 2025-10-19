@@ -69,7 +69,6 @@ export default function Contact() {
         </h2>
       </div>
 
-      {/* Carte courriel */}
       <GradientCard>
         <Row
           icon={
@@ -86,18 +85,16 @@ export default function Contact() {
           }
           label={t("contact_email_label")}
           value={
-            <a
-              className="underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500"
-              href={`mailto:${email}`}
-            >
-              {email}
-            </a>
-          }
-          action={
-            <div className="mt-2">
+            <div className="flex items-center justify-between gap-3">
+              <a
+                className="underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500"
+                href={`mailto:${email}`}
+              >
+                {email}
+              </a>
               <button
                 onClick={copy}
-                className="rounded-xl border px-3 py-1.5 text-sm hover:bg-gray-50 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
+                className="rounded-xl border px-3 py-1.5 text-sm hover:bg-gray-50 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 shrink-0"
               >
                 {copied ? t("copied") : t("copy_email")}
               </button>
@@ -106,7 +103,6 @@ export default function Contact() {
         />
       </GradientCard>
 
-      {/* Cartes réseaux */}
       <div className="grid gap-6 sm:grid-cols-2">
         <GradientCard href={linkedin} ariaLabel="LinkedIn">
           <Row
@@ -122,7 +118,10 @@ export default function Contact() {
             label={t("contact_linkedin_label")}
             value={
               <span className="select-all">
-                {linkedin.replace(/^https?:\/\//, "").replace("www.", "").replace("linkedin.com/in/", "linkedin/")}
+                {linkedin
+                  .replace(/^https?:\/\//, "")
+                  .replace("www.", "")
+                  .replace("linkedin.com/in/", "linkedin/")}
               </span>
             }
           />
@@ -153,7 +152,6 @@ export default function Contact() {
         </GradientCard>
       </div>
 
-      {/* Bouton retour */}
       <div>
         <a
           href="#/"

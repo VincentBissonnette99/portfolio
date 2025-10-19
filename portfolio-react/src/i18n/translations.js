@@ -11,7 +11,8 @@ export const translations = {
 
     // Page jeu interactif
     interactive_game_title: "Jeu interactif",
-    interactive_game_desc: "Essayez mon petit jeu directement dans le navigateur, conçu pour démontrer mon gameplay, ma structure de code et mon souci de performance.",
+    interactive_game_desc:
+      "Essayez mon petit jeu directement dans le navigateur, conçu pour démontrer mon gameplay, ma structure de code et mon souci de performance.",
     interactive_game_placeholder: "Intégration du jeu, export Web ici",
     play_game: "Jouer",
     view_source: "Voir le code source",
@@ -29,12 +30,14 @@ export const translations = {
 
     // Contact
     contact_page_title: "Contact",
-    contact_intro: "Tu peux me joindre ici. Mes profils publics sont aussi disponibles.",
     contact_email_label: "Courriel",
     contact_linkedin_label: "LinkedIn",
     contact_github_label: "GitHub",
     contact_linkedin_url: "https://www.linkedin.com/in/vincentbissonnette2899",
     contact_github_url: "https://github.com/VincentBissonnette99",
+    copy_email: "Copier le courriel",
+    copied: "Copié",
+    back_home: "Retour à l’accueil",
   },
 
   en: {
@@ -47,14 +50,16 @@ export const translations = {
     footer_copyright: "All rights reserved",
 
     interactive_game_title: "Interactive game",
-    interactive_game_desc: "Play my small browser game, built to demonstrate gameplay, code structure, and performance focus.",
+    interactive_game_desc:
+      "Play my small browser game, built to demonstrate gameplay, code structure, and performance focus.",
     interactive_game_placeholder: "Game embed, web export goes here",
     play_game: "Play",
     view_source: "View source",
     game_tech_stack: "Stack, React, Vite, Tailwind",
 
     hero_title: "Welcome to my portfolio",
-    hero_subtitle: "Developer, Computer Science and Software Engineering student",
+    hero_subtitle:
+      "Developer, Computer Science and Software Engineering student",
     hero_cta_projects: "Featured Projects",
     hero_cta_contact: "Contact",
     badge_langs: "FR, EN",
@@ -63,11 +68,13 @@ export const translations = {
     lang_en: "English",
 
     contact_page_title: "Contact",
-    contact_intro: "You can reach me here. My public profiles are also available.",
     contact_email_label: "Email",
     contact_linkedin_label: "LinkedIn",
     contact_github_label: "GitHub",
     contact_linkedin_url: "https://www.linkedin.com/in/vincentbissonnette2899",
     contact_github_url: "https://github.com/VincentBissonnette99",
+    copy_email: "Copy email",
+    copied: "Copied",
+    back_home: "Back to home",
   },
 };

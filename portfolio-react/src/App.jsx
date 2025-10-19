@@ -13,20 +13,49 @@ function useHash() {
   return useSyncExternalStore(subscribe, getSnapshot, () => "");
 }
 
+function GameSection({ t }) {
+  return (
+    <section id="game" className="space-y-4">
+      <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">
+        {t("interactive_game_title")}
+      </h2>
+      <p className="text-gray-700">{t("interactive_game_desc")}</p>
+
+      <div className="rounded-2xl border bg-white p-5 shadow-sm">
+        {/* Remplace l’iframe par ton export Web ou ton canvas */}
+        <div className="aspect-video w-full rounded-xl border bg-gray-50 grid place-items-center">
+          <span className="text-sm text-gray-500">
+            {t("interactive_game_placeholder")}
+          </span>
+        </div>
+
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <a
+            href="#"
+            className="rounded-xl bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:opacity-90 transition"
+          >
+            {t("play_game")}
+          </a>
+          <a
+            href="#"
+            className="rounded-xl border px-4 py-2 text-sm hover:bg-gray-50 transition"
+          >
+            {t("view_source")}
+          </a>
+          <span className="text-xs text-gray-500">
+            {t("game_tech_stack")}
+          </span>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function HomeBody({ t }) {
   return (
     <>
       <Hero />
-      {/* Tu peux garder ta section jeu interactif ici si tu veux */}
-      <section id="contact" className="space-y-2">
-        {/* Cette ancre peut rester, mais le vrai contact est sur la page dédiée */}
-        <p className="text-sm text-gray-500">
-          {t("nav_contact")} →{" "}
-          <a className="underline" href="#/contact">
-            #/contact
-          </a>
-        </p>
-      </section>
+      <GameSection t={t} />
     </>
   );
 }

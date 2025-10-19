@@ -1,63 +1,65 @@
+📘 Read this in other languages: [Français](./README.fr.md)
+
 # 🌐 Portfolio – Vincent Bissonnette
 
-Bienvenue sur le dépôt de mon site web personnel.  
-Ce portfolio a été conçu pour présenter mes projets, mes compétences techniques et mon parcours en informatique.
+Welcome to the repository for my personal website.  
+This portfolio was created to showcase my projects, technical skills, and academic journey.
 
 ---
 
-## 🧑‍💻 À propos
-Je m'appelle **Vincent Bissonnette**, étudiant en **informatique et génie logiciel à l’UQAM**.  
-Je suis passionné par le **développement d’applications**, la **programmation système** et la **création d’expériences interactives**.  
+## 🧑‍💻 About Me
+My name is **Vincent Bissonnette**, a **Computer Science and Software Engineering student at UQAM**.  
+I am passionate about **application development**, **computer architecture**, and **interactive experiences**.
 
-Sur ce site, vous trouverez:
-- Mon **CV** et mon parcours académique  
-- Mes **projets personnels et scolaires** (C++, React Native, RISC-V, etc.)  
-- Une **section interactive** où vous pouvez tester un mini-jeu que j’ai programmé
+This website includes:
+- My **resume** and academic background  
+- **Personal and academic projects** (C++, React Native, RISC-V, etc.)  
+- An **interactive section** where you can try a small game I programmed
 
 ---
 
-## ⚙️ Technologies utilisées
-Le site est construit avec:
+## ⚙️ Technologies Used
+The website is built with:
 - **HTML5 / CSS3 / JavaScript**
-- ou **React / Vite / TailwindCSS**
-- Hébergé via **GitHub Pages**
+- or **React / Vite / TailwindCSS**
+- Hosted using **GitHub Pages**
 
 ---
 
-## 🚀 Déploiement
-Le site est automatiquement déployé grâce à **GitHub Pages**.  
-Lien du site: [https://vincentbissonnette99.github.io/portfolio](https://vincentbissonnette99.github.io/portfolio)
+## 🚀 Deployment
+The site is automatically deployed via **GitHub Pages**.  
+Live link: [https://vincentbissonnette99.github.io/portfolio](https://vincentbissonnette99.github.io/portfolio)
 
-Pour lancer le projet en local:
+To run the project locally:
 ```bash
 git clone git@github.com:VincentBissonnette99/portfolio.git
 cd portfolio
-# selon le cas
+# depending on your setup
 npm install
 npm run dev
 ```
 
 ---
 
-## 🧭 Structure du projet
+## 🧭 Project Structure
 ```
 portfolio/
 │
-├── src/                # Code source du site
-├── public/             # Images et fichiers statiques
-├── package.json        # Dépendances et scripts
-├── README.md           # Ce fichier
-└── index.html          # Point d’entrée du site
+├── src/                # Source code
+├── public/             # Static files
+├── package.json        # Dependencies and scripts
+├── README.md           # This file
+└── index.html          # Main entry point
 ```
 
 ---
 
 ## 📫 Contact
-📍 Laval, Québec  
+📍 Laval, Quebec, Canada  
 ✉️ [vincentbissonnette86@gmail.com](mailto:vincentbissonnette86@gmail.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/vincentbissonnette2899)  
-💻 [GitHub](https://github.com/VincentBissonnette99)
+💼 [LinkedIn](https://www.linkedin.com/in/vincent-bissonnette)  
+💻 [GitHub](https://github.com/vincentbissonnette2899)
 
 ---
 
-> 💡 *Ce portfolio évolue régulièrement avec mes nouveaux projets et apprentissages.*
+> 💡 *This portfolio evolves regularly as I learn new things and build new projects.*

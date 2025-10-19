@@ -19,25 +19,38 @@ This website includes:
 ---
 
 ## ⚙️ Technologies Used
-The website is built with:
-- **HTML5 / CSS3 / JavaScript**
-- or **React / Vite / TailwindCSS**
-- Hosted using **GitHub Pages**
+
+- [React 18](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [GitHub Pages](https://pages.github.com/)
+- [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ---
 
 ## 🚀 Deployment
-The site is automatically deployed via **GitHub Pages**.  
-Live link: [https://vincentbissonnette99.github.io/portfolio](https://vincentbissonnette99.github.io/portfolio)
 
-To run the project locally:
+The site is hosted via **GitHub Pages**.
+
+### 💻 Run locally
 ```bash
-git clone git@github.com:VincentBissonnette99/portfolio.git
-cd portfolio
-# depending on your setup
 npm install
 npm run dev
 ```
+Then open [http://localhost:5173](http://localhost:5173)
+
+### 🌍 Deploy to GitHub Pages
+Make sure your remote is correctly configured:
+```bash
+git remote -v
+```
+Then run:
+```bash
+npm run deploy
+```
+
+Your website will be available at:
+👉 [https://VincentBissonnette99.github.io/portfolio/](https://VincentBissonnette99.github.io/portfolio/)
 
 ---
 
@@ -45,11 +58,19 @@ npm run dev
 ```
 portfolio/
 │
-├── src/                # Source code
-├── public/             # Static files
-├── package.json        # Dependencies and scripts
-├── README.md           # This file
-└── index.html          # Main entry point
+├── public/                # Static assets (favicon, etc.)
+├── src/
+│   ├── components/        # React components (Header, ProjectCard, etc.)
+│   ├── i18n/              # Language management (FR/EN)
+│   ├── App.jsx            # Main app structure
+│   ├── main.jsx           # React entry point
+│   └── styles.css         # TailwindCSS styles
+│
+├── package.json           # Dependencies and npm scripts
+├── vite.config.js         # Vite config (with base path for GitHub Pages)
+├── tailwind.config.js     # Tailwind configuration
+├── LICENSE                # MIT license
+└── README.md / README.fr.md
 ```
 
 ---

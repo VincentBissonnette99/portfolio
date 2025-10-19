@@ -19,25 +19,38 @@ Sur ce site, vous trouverez:
 ---
 
 ## ⚙️ Technologies utilisées
-Le site est construit avec:
-- **HTML5 / CSS3 / JavaScript**
-- ou **React / Vite / TailwindCSS**
-- Hébergé via **GitHub Pages**
+
+- [React 18](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [GitHub Pages](https://pages.github.com/) (pour l’hébergement)
+- [gh-pages](https://www.npmjs.com/package/gh-pages) (pour le déploiement)
 
 ---
 
 ## 🚀 Déploiement
-Le site est automatiquement déployé grâce à **GitHub Pages**.  
-Lien du site: [https://vincentbissonnette99.github.io/portfolio](https://vincentbissonnette99.github.io/portfolio)
 
-Pour lancer le projet en local:
+Le site est hébergé via **GitHub Pages**.
+
+### 💻 Lancer en local
 ```bash
-git clone git@github.com:VincentBissonnette99/portfolio.git
-cd portfolio
-# selon le cas
 npm install
 npm run dev
 ```
+Puis ouvrez [http://localhost:5173](http://localhost:5173)
+
+### 🌍 Déployer sur GitHub Pages
+Assurez-vous d’avoir configuré le dépôt distant:
+```bash
+git remote -v
+```
+Puis exécutez:
+```bash
+npm run deploy
+```
+
+Le site sera disponible à l’adresse:
+👉 [https://VincentBissonnette99.github.io/portfolio/](https://VincentBissonnette99.github.io/portfolio/)
 
 ---
 
@@ -45,11 +58,19 @@ npm run dev
 ```
 portfolio/
 │
-├── src/                # Code source du site
-├── public/             # Images et fichiers statiques
-├── package.json        # Dépendances et scripts
-├── README.md           # Ce fichier
-└── index.html          # Point d’entrée du site
+├── public/                # Fichiers statiques (favicon, etc.)
+├── src/
+│   ├── components/        # Composants React (Header, ProjectCard, etc.)
+│   ├── i18n/              # Gestion des langues (FR/EN)
+│   ├── App.jsx            # Structure principale de l’application
+│   ├── main.jsx           # Point d’entrée React
+│   └── styles.css         # Styles TailwindCSS
+│
+├── package.json           # Dépendances et scripts npm
+├── vite.config.js         # Configuration Vite (base pour GitHub Pages)
+├── tailwind.config.js     # Configuration TailwindCSS
+├── LICENSE                # Licence MIT
+└── README.fr.md / README.md
 ```
 
 ---

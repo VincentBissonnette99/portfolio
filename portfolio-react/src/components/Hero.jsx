@@ -9,9 +9,9 @@ export default function Hero() {
       <div className="absolute -bottom-20 -left-16 h-72 w-72 rounded-full bg-black/10 blur-3xl" />
       <div className="relative p-8 sm:p-12">
         <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs backdrop-blur">
-          <span>FR, EN</span>
+          <span>{t("badge_langs")}</span>
           <span className="h-1 w-1 rounded-full bg-white/60" />
-          <span>React, Vite, Tailwind</span>
+          <span>{t("badge_stack")}</span>
         </div>
 
         <h2 className="mt-6 text-3xl sm:text-5xl font-semibold leading-tight tracking-tight">
@@ -26,13 +26,13 @@ export default function Hero() {
             href="#projects"
             className="rounded-xl bg-white px-4 py-2 text-sm font-medium text-indigo-700 shadow hover:shadow-md transition"
           >
-            {t("featured_projects")}
+            {t("hero_cta_projects")}
           </a>
           <a
             href="#contact"
             className="rounded-xl border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/20 transition"
           >
-            {t("nav_contact")}
+            {t("hero_cta_contact")}
           </a>
         </div>
       </div>

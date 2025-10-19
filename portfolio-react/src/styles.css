@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom base styles */
 :root {
   --pad: 1rem;
+}
+
+.card-glow:hover {
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.15);
 }

@@ -38,6 +38,73 @@ export const translations = {
     copy_email: "Copier le courriel",
     copied: "Copié",
     back_home: "Retour à l’accueil",
+
+    // CV
+    cv_title: "CV",
+    cv_web_note:
+      "Version web, PDFs disponibles pour ouverture et téléchargement.",
+    cv_open_pdf: "Ouvrir le PDF",
+    cv_download: "Télécharger",
+    cv_profile: "Profil",
+    cv_skills: "Compétences",
+    cv_skills_core: "Compétences principales",
+    cv_skills_other: "Autres compétences",
+    cv_experience: "Expérience",
+    cv_education: "Formation",
+    cv_period_location: "{{period}}, {{location}}",
+
+    cv_summary:
+      "Étudiant en informatique et génie logiciel à l’UQAM, intéressé par le développement d’applications, l’architecture des ordinateurs, et les expériences interactives.",
+    cv_skill_items_core: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Vite",
+      "TailwindCSS",
+    ],
+    cv_skill_items_other: [
+      "C++",
+      "SFML",
+      "Git",
+      "GitHub Actions",
+      "Google Maps Platform",
+      "OpenWeather",
+    ],
+
+    cv_exp: [
+      {
+        title: "Agent en assurance de dommages des particuliers",
+        company: "Entreprise, contact sur demande",
+        period: "2023, présent",
+        location: "Québec, Canada",
+        bullets: [
+          "Service client et traitement de demandes, communication claire et rigoureuse.",
+          "Utilisation quotidienne d’outils informatiques et de systèmes internes.",
+        ],
+      },
+      {
+        title: "Projets académiques, RISC-V, systèmes",
+        company: "UQAM",
+        period: "2024, 2025",
+        location: "Montréal",
+        bullets: [
+          "Analyse de pipeline, hazards, forwarding, tableaux de cycles, mémoire cache.",
+          "Outils, PlantUML, diagrammes, tableaux d’évaluation.",
+        ],
+      },
+    ],
+
+    cv_edu: [
+      {
+        title: "Baccalauréat en informatique et génie logiciel",
+        company: "UQAM",
+        period: "En cours",
+        location: "Montréal",
+        bullets: [
+          "Cours marquants, architecture des ordinateurs, systèmes, algorithmique.",
+        ],
+      },
+    ],
   },
 
   en: {
@@ -76,5 +143,68 @@ export const translations = {
     copy_email: "Copy email",
     copied: "Copied",
     back_home: "Back to home",
+
+    en_cv_title: "Resume",
+    en_cv_web_note: "Web version, PDFs available to open and download.",
+    en_cv_open_pdf: "Open PDF",
+    en_cv_download: "Download",
+    en_cv_profile: "Summary",
+    en_cv_skills: "Skills",
+    en_cv_skills_core: "Core skills",
+    en_cv_skills_other: "Other skills",
+    en_cv_experience: "Experience",
+    en_cv_education: "Education",
+    en_cv_period_location: "{{period}}, {{location}}",
+
+    en_cv_summary:
+      "Computer Science and Software Engineering student at UQAM, interested in application development, computer architecture, and interactive experiences.",
+    en_cv_skill_items_core: [
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Vite",
+      "TailwindCSS",
+    ],
+    en_cv_skill_items_other: [
+      "C++",
+      "SFML",
+      "Git",
+      "GitHub Actions",
+      "Google Maps Platform",
+      "OpenWeather",
+    ],
+
+    en_cv_exp: [
+      {
+        title: "Personal lines insurance agent",
+        company: "Company, contact on request",
+        period: "2023, present",
+        location: "Quebec, Canada",
+        bullets: [
+          "Handled customer requests with clear and rigorous communication.",
+          "Daily use of internal systems and productivity tools.",
+        ],
+      },
+      {
+        title: "Academic projects, RISC-V, systems",
+        company: "UQAM",
+        period: "2024, 2025",
+        location: "Montreal",
+        bullets: [
+          "Pipeline analysis, hazards, forwarding, cycle tables, cache memory.",
+          "Tools, PlantUML, diagrams, evaluation tables.",
+        ],
+      },
+    ],
+
+    en_cv_edu: [
+      {
+        title: "BSc, Computer Science and Software Engineering",
+        company: "UQAM",
+        period: "In progress",
+        location: "Montreal",
+        bullets: ["Key courses, computer architecture, systems, algorithms."],
+      },
+    ],
   },
 };

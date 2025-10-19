@@ -25,7 +25,7 @@ export default function Header() {
           <a href="#projects" className="hover:text-gray-900 text-gray-600">
             {t("nav_projects")}
           </a>
-          <a href="#cv" className="hover:text-gray-900 text-gray-600">
+          <a href="#/cv" className="hover:text-gray-900 text-gray-600">
             {t("nav_cv")}
           </a>
           <a href="#/contact" className="hover:text-gray-900 text-gray-600">

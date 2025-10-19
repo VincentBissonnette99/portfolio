@@ -29,7 +29,7 @@ export default function Hero() {
             {t("hero_cta_projects")}
           </a>
           <a
-            href="#contact"
+            href="#/contact"
             className="rounded-xl border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium text-white hover:bg-white/20 transition"
           >
             {t("hero_cta_contact")}

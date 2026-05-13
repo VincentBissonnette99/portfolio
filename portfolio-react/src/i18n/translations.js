@@ -1,5 +1,6 @@
 export const translations = {
   fr: {
+    nav_home: "Accueil",
     nav_projects: "Projets",
     nav_cv: "CV",
     nav_contact: "Contact",
@@ -14,6 +15,10 @@ export const translations = {
     hero_cta_contact: "Contact",
     badge_langs: "FR, EN",
     badge_stack: "Java, C++, Python, C#, JavaScript, TypeScript, SQL",
+    projects_title: "Projets",
+    projects_heading: "Travaux récents et réalisations",
+    projects_intro: "Quelques projets récents démontrant mes compétences web, mobile et jeu.",
+    view_project: "Voir le projet",
     lang_fr: "Français",
     lang_en: "English",
 
@@ -109,6 +114,7 @@ export const translations = {
   },
 
   en: {
+    nav_home: "Home",
     nav_projects: "Projects",
     nav_cv: "Resume",
     nav_contact: "Contact",
@@ -123,6 +129,10 @@ export const translations = {
     hero_cta_contact: "Contact",
     badge_langs: "FR, EN",
     badge_stack: "Java, C++, Python, C#, JavaScript, TypeScript, SQL",
+    projects_title: "Projects",
+    projects_heading: "Recent work and highlights",
+    projects_intro: "Recent projects showcasing web, mobile and game development skills.",
+    view_project: "View project",
     lang_fr: "Français",
     lang_en: "English",
 

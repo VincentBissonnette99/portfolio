@@ -23,7 +23,7 @@ export default function Hero() {
 
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
-            href="#projects"
+            href="#/projects"
             className="rounded-xl bg-white px-4 py-2 text-sm font-medium text-indigo-700 shadow hover:shadow-md transition"
           >
             {t("hero_cta_projects")}

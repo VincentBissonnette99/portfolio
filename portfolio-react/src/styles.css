@@ -4,6 +4,59 @@
 
 :root {
   --pad: 1rem;
+  /* Design System Colors */
+  --primary-gradient: linear-gradient(135deg, #ef4444 0%, #f97316 50%, #eab308 100%);
+  --secondary-gradient: linear-gradient(135deg, #64748b 0%, #475569 100%);
+  --accent-gradient: linear-gradient(135deg, #f87171 0%, #fb923c 50%, #fcd34d 100%);
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+/* Design System Components */
+@layer components {
+  .card-base {
+    @apply rounded-3xl border border-slate-200/60 bg-white/80 backdrop-blur-sm shadow-lg shadow-slate-900/5;
+  }
+
+  .card-gradient {
+    @apply rounded-3xl p-[2px] bg-gradient-to-br from-red-500 via-orange-500 to-yellow-500;
+  }
+
+  .card-gradient > div {
+    @apply rounded-3xl bg-white p-6 shadow-sm;
+  }
+
+  .btn-primary {
+    @apply rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition-all duration-200 hover:bg-slate-800 hover:shadow-xl hover:shadow-slate-900/30 hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply rounded-2xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-200 hover:bg-slate-50 hover:shadow-md hover:-translate-y-0.5;
+  }
+
+  .btn-ghost {
+    @apply rounded-2xl border border-slate-200/60 bg-slate-50/80 px-5 py-3 text-sm font-semibold text-slate-700 backdrop-blur-sm transition-all duration-200 hover:bg-slate-100/80 hover:shadow-md;
+  }
+
+  .section-spacing {
+    @apply space-y-8;
+  }
+
+  .page-container {
+    @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-12;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-red-600 via-orange-600 to-yellow-600 bg-clip-text text-transparent;
+  }
+
+  .badge-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-red-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-red-700;
+  }
+
+  .badge-secondary {
+    @apply inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-slate-600;
+  }
 }
 
 .card-glow:hover {

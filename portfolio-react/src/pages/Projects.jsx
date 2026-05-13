@@ -8,30 +8,25 @@ export default function Projects() {
   const projects = getProjectsByLang(lang);
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-10 space-y-10">
-      <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <span className="inline-flex rounded-full bg-red-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-red-700">
-              {t("projects_title")}
-            </span>
-            <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900">
+    <div className="page-container">
+      <div className="card-base p-8 lg:p-12">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <div className="max-w-2xl">
+            <div className="badge-primary">{t("projects_title")}</div>
+            <h1 className="mt-6 text-5xl font-bold tracking-tight text-slate-900">
               {t("projects_heading")}
             </h1>
-            <p className="mt-4 text-gray-600 max-w-2xl leading-7">
+            <p className="mt-6 text-lg leading-8 text-slate-600">
               {t("projects_intro")}
             </p>
           </div>
-          <a
-            href="#/"
-            className="inline-flex items-center justify-center rounded-3xl border border-gray-200 bg-gray-50 px-5 py-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100"
-          >
+          <a href="#/" className="btn-ghost shrink-0">
             {t("back_home")}
           </a>
         </div>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

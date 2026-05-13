@@ -3,8 +3,8 @@ import { useLanguage } from "../i18n/LanguageContext";
 
 function GradientCard({ children, href, ariaLabel }) {
   const content = (
-    <div className="rounded-2xl p-[2px] bg-gradient-to-br from-red-500 via-orange-500 to-yellow-500">
-      <div className="rounded-2xl bg-white p-5 shadow-sm transition hover:shadow-md">
+    <div className="card-gradient">
+      <div className="card-base p-6 transition-all duration-200 hover:shadow-xl">
         {children}
       </div>
     </div>
@@ -15,12 +15,12 @@ function GradientCard({ children, href, ariaLabel }) {
       target="_blank"
       rel="noreferrer"
       aria-label={ariaLabel}
-      className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-2xl"
+      className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 rounded-3xl"
     >
       {content}
     </a>
   ) : (
-    <div className="focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 rounded-2xl">
+    <div className="focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 rounded-3xl">
       {content}
     </div>
   );
@@ -28,15 +28,15 @@ function GradientCard({ children, href, ariaLabel }) {
 
 function Row({ icon, label, value, action }) {
   return (
-    <div className="flex items-start gap-4">
-      <div className="mt-1 h-9 w-9 shrink-0 grid place-items-center rounded-xl bg-gray-100">
+    <div className="flex items-start gap-6">
+      <div className="mt-1 h-10 w-10 shrink-0 grid place-items-center rounded-2xl bg-slate-100">
         {icon}
       </div>
-      <div className="min-w-0">
-        <div className="text-xs uppercase tracking-wide text-gray-500">
+      <div className="min-w-0 flex-1">
+        <div className="text-sm uppercase tracking-wide text-slate-500 font-semibold mb-1">
           {label}
         </div>
-        <div className="mt-0.5 font-medium text-gray-900 break-all">
+        <div className="font-semibold text-slate-900 break-all text-lg">
           {value}
         </div>
         {action}
@@ -62,9 +62,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8 py-10 space-y-8">
-      <div className="space-y-2">
-        <h2 className="text-3xl font-semibold tracking-tight">
+    <div className="page-container section-spacing">
+      <div className="text-center mb-12">
+        <h2 className="text-5xl font-bold tracking-tight text-slate-900 mb-4">
           {t("contact_page_title")}
         </h2>
       </div>
@@ -74,7 +74,7 @@ export default function Contact() {
           icon={
             <svg
               viewBox="0 0 24 24"
-              className="h-5 w-5 text-gray-700"
+              className="h-6 w-6 text-slate-700"
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -85,17 +85,14 @@ export default function Contact() {
           }
           label={t("contact_email_label")}
           value={
-            <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center justify-between gap-4">
               <a
-                className="underline decoration-gray-300 underline-offset-4 hover:decoration-gray-500"
+                className="underline decoration-slate-300 underline-offset-4 hover:decoration-slate-500 transition-colors text-lg"
                 href={`mailto:${email}`}
               >
                 {email}
               </a>
-              <button
-                onClick={copy}
-                className="rounded-xl border px-3 py-1.5 text-sm hover:bg-gray-50 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 shrink-0"
-              >
+              <button onClick={copy} className="btn-secondary shrink-0">
                 {copied ? t("copied") : t("copy_email")}
               </button>
             </div>
@@ -103,13 +100,13 @@ export default function Contact() {
         />
       </GradientCard>
 
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid gap-8 sm:grid-cols-2">
         <GradientCard href={linkedin} ariaLabel="LinkedIn">
           <Row
             icon={
               <svg
                 viewBox="0 0 24 24"
-                className="h-5 w-5 text-[#0A66C2]"
+                className="h-6 w-6 text-[#0A66C2]"
                 fill="currentColor"
               >
                 <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.2 2.32-2.47 4.78-2.47C22.8 7.73 24 10.24 24 14.1V24h-5v-8.72c0-2.08-.04-4.75-2.9-4.75-2.9 0-3.35 2.27-3.35 4.6V24H8z" />
@@ -117,7 +114,7 @@ export default function Contact() {
             }
             label={t("contact_linkedin_label")}
             value={
-              <span className="select-all">
+              <span className="select-all text-lg">
                 {linkedin
                   .replace(/^https?:\/\//, "")
                   .replace("www.", "")
@@ -132,7 +129,7 @@ export default function Contact() {
             icon={
               <svg
                 viewBox="0 0 24 24"
-                className="h-5 w-5 text-gray-900"
+                className="h-6 w-6 text-slate-900"
                 fill="currentColor"
               >
                 <path
@@ -144,7 +141,7 @@ export default function Contact() {
             }
             label={t("contact_github_label")}
             value={
-              <span className="select-all">
+              <span className="select-all text-lg">
                 {github.replace(/^https?:\/\//, "")}
               </span>
             }
@@ -152,14 +149,11 @@ export default function Contact() {
         </GradientCard>
       </div>
 
-      <div>
-        <a
-          href="#/"
-          className="inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm hover:bg-gray-50 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500"
-        >
+      <div className="text-center">
+        <a href="#/" className="btn-ghost inline-flex items-center gap-3">
           <svg
             viewBox="0 0 24 24"
-            className="h-4 w-4"
+            className="h-5 w-5"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"

@@ -4,18 +4,16 @@ import { translations } from "../i18n/translations";
 
 function GradientCard({ children, className = "" }) {
   return (
-    <div
-      className={`rounded-3xl p-[2px] bg-gradient-to-br from-red-500 via-orange-500 to-yellow-500 ${className}`}
-    >
-      <div className="rounded-3xl bg-white p-6 shadow-sm">{children}</div>
+    <div className={`card-gradient ${className}`}>
+      <div className="card-base">{children}</div>
     </div>
   );
 }
 
 function Section({ title, children }) {
   return (
-    <section className="space-y-3">
-      <h3 className="text-xl font-semibold">{title}</h3>
+    <section className="space-y-6">
+      <h3 className="text-2xl font-bold text-slate-900">{title}</h3>
       <GradientCard>{children}</GradientCard>
     </section>
   );
@@ -23,7 +21,7 @@ function Section({ title, children }) {
 
 function Pill({ children }) {
   return (
-    <span className="text-xs rounded-full border px-2 py-1 bg-gray-50">
+    <span className="text-sm rounded-2xl border border-slate-200/60 px-4 py-2 bg-white/80 font-medium text-slate-700 shadow-sm">
       {children}
     </span>
   );
@@ -41,18 +39,23 @@ function LineItem({
     .replace("{{period}}", period)
     .replace("{{location}}", location);
   return (
-    <article className="relative pl-6">
-      <div className="absolute left-0 top-1.5 h-3 w-3 rounded-full bg-gradient-to-br from-red-500 to-yellow-500" />
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h4 className="font-medium">
-          {title}, <span className="text-gray-700">{company}</span>
+    <article className="relative pl-8">
+      <div className="absolute left-0 top-2 h-4 w-4 rounded-full bg-gradient-to-br from-red-500 to-orange-500 shadow-lg" />
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <h4 className="font-bold text-lg text-slate-900">
+          {title},{" "}
+          <span className="text-slate-700 font-semibold">{company}</span>
         </h4>
-        <span className="text-sm text-gray-600">{line}</span>
+        <span className="text-sm text-slate-600 font-medium bg-slate-100 px-3 py-1 rounded-full">
+          {line}
+        </span>
       </div>
       {bullets?.length > 0 && (
-        <ul className="mt-2 list-disc pl-5 space-y-1 text-sm text-gray-800">
+        <ul className="mt-4 list-disc pl-6 space-y-2 text-slate-600 leading-7">
           {bullets.map((b, i) => (
-            <li key={i}>{b}</li>
+            <li key={i} className="text-base">
+              {b}
+            </li>
           ))}
         </ul>
       )}
@@ -97,32 +100,28 @@ export default function CV() {
   const pdfSrc = lang === "fr" ? frSrc : enSrc;
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+    <div className="page-container section-spacing">
       <GradientCard className="relative overflow-hidden">
-        <div className="pointer-events-none absolute -top-24 -right-20 h-56 w-56 rounded-full bg-red-500/10 blur-3xl" />
-        <div className="pointer-events-none absolute -bottom-28 -left-16 h-64 w-64 rounded-full bg-yellow-500/10 blur-3xl" />
+        <div className="pointer-events-none absolute -top-32 -right-20 h-80 w-80 rounded-full bg-red-500/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-28 -left-16 h-96 w-96 rounded-full bg-yellow-500/10 blur-3xl" />
 
-        <div className="relative flex flex-wrap items-center justify-between gap-4">
+        <div className="relative flex flex-wrap items-center justify-between gap-6">
           <div>
-            <h2 className="text-3xl font-semibold tracking-tight">
+            <h2 className="text-4xl font-bold tracking-tight text-slate-900">
               {labels.title}
             </h2>
-            <p className="text-gray-700">{labels.webNote}</p>
+            <p className="text-slate-700 text-lg mt-2">{labels.webNote}</p>
           </div>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-4">
             <a
               href={pdfSrc}
               target="_blank"
               rel="noreferrer"
-              className="rounded-xl bg-gray-900 px-4 py-2 text-sm font-medium text-white shadow hover:shadow-md transition"
+              className="btn-primary"
             >
               {labels.openPDF}
             </a>
-            <a
-              href={pdfSrc}
-              download
-              className="rounded-xl border px-4 py-2 text-sm hover:bg-gray-50 transition"
-            >
+            <a href={pdfSrc} download className="btn-secondary">
               {labels.download}
             </a>
           </div>
@@ -157,8 +156,8 @@ export default function CV() {
       </Section>
 
       <Section title={labels.experience}>
-        <div className="relative space-y-6">
-          <div className="absolute left-[5px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-red-200 to-yellow-200" />
+        <div className="relative space-y-8">
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-200 via-orange-200 to-yellow-200 rounded-full" />
           {Array.isArray(exp) &&
             exp.map((j, i) => (
               <LineItem
@@ -175,8 +174,8 @@ export default function CV() {
       </Section>
 
       <Section title={labels.education}>
-        <div className="relative space-y-6">
-          <div className="absolute left-[5px] top-0 bottom-0 w-[2px] bg-gradient-to-b from-red-200 to-yellow-200" />
+        <div className="relative space-y-8">
+          <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-red-200 via-orange-200 to-yellow-200 rounded-full" />
           {Array.isArray(edu) &&
             edu.map((j, i) => (
               <LineItem

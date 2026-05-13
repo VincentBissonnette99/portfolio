@@ -35,9 +35,9 @@ export default function App() {
   const projectId = isProjectDetail ? hash.replace("#/projects/", "") : null;
 
   return (
-    <div className="min-h-screen flex flex-col bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-50 via-white to-gray-50">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-slate-50 via-white to-slate-100">
       <Header />
-      <main className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+      <main className="page-container section-spacing flex-1">
         {isContact ? (
           <Contact />
         ) : isCV ? (
@@ -50,8 +50,10 @@ export default function App() {
           <HomeBody />
         )}
       </main>
-      <footer className="mt-auto border-t py-6 text-center text-sm text-gray-600">
-        © {new Date().getFullYear()} Vincent Bissonnette
+      <footer className="mt-auto border-t border-slate-200/60 py-8 text-center text-sm text-slate-600 bg-white/50 backdrop-blur-sm">
+        <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+          © {new Date().getFullYear()} Vincent Bissonnette
+        </div>
       </footer>
     </div>
   );

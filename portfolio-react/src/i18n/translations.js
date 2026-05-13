@@ -1,6 +1,5 @@
 export const translations = {
   fr: {
-    // Nav
     nav_projects: "Projets",
     nav_cv: "CV",
     nav_contact: "Contact",
@@ -9,7 +8,6 @@ export const translations = {
     contact_email: "vincentbissonnette86@gmail.com",
     footer_copyright: "Tous droits réservés",
 
-    // Page jeu interactif
     interactive_game_title: "Jeu interactif",
     interactive_game_desc:
       "Essayez mon petit jeu directement dans le navigateur, conçu pour démontrer mon gameplay, ma structure de code et mon souci de performance.",
@@ -18,9 +16,8 @@ export const translations = {
     view_source: "Voir le code source",
     game_tech_stack: "Tech, React, Vite, Tailwind",
 
-    // Hero
     hero_title: "Bienvenue sur mon portfolio",
-    hero_subtitle: "Développeur, étudiant en informatique et génie logiciel",
+    hero_subtitle: "Développeur, informatique et génie logiciel",
     hero_cta_projects: "Projets en vedette",
     hero_cta_contact: "Contact",
     badge_langs: "FR, EN",
@@ -28,7 +25,6 @@ export const translations = {
     lang_fr: "Français",
     lang_en: "English",
 
-    // Contact
     contact_page_title: "Contact",
     contact_email_label: "Courriel",
     contact_linkedin_label: "LinkedIn",
@@ -39,7 +35,6 @@ export const translations = {
     copied: "Copié",
     back_home: "Retour à l’accueil",
 
-    // CV
     cv_title: "CV",
     cv_web_note:
       "Version web, PDFs disponibles pour ouverture et téléchargement.",
@@ -126,7 +121,7 @@ export const translations = {
 
     hero_title: "Welcome to my portfolio",
     hero_subtitle:
-      "Developer, Computer Science and Software Engineering student",
+      "Developer, Computer Science and Software Engineering",
     hero_cta_projects: "Featured Projects",
     hero_cta_contact: "Contact",
     badge_langs: "FR, EN",

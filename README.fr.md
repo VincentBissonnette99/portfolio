@@ -8,7 +8,7 @@ Ce portfolio a été conçu pour présenter mes projets, mes compétences techni
 ---
 
 ## 🧑‍💻 À propos
-Je m'appelle **Vincent Bissonnette**, étudiant en **informatique et génie logiciel à l’UQAM**.  
+Je m'appelle **Vincent Bissonnette**, gradué en **informatique et génie logiciel à l’UQAM**.  
 Je suis passionné par le **développement d’applications**, la **programmation système** et la **création d’expériences interactives**.  
 
 Sur ce site, vous trouverez:

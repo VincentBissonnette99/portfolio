@@ -8,7 +8,7 @@ This portfolio was created to showcase my projects, technical skills, and academ
 ---
 
 ## 🧑‍💻 About Me
-My name is **Vincent Bissonnette**, a **Computer Science and Software Engineering student at UQAM**.  
+My name is **Vincent Bissonnette**, a **Computer Science and Software Engineering graduate from UQAM**.  
 I am passionate about **application development**, **computer architecture**, and **interactive experiences**.
 
 This website includes:

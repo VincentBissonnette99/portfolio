@@ -17,7 +17,9 @@ export default function ProjectCard({
           <span className="h-2.5 w-2.5 rounded-full bg-red-500 shadow-inner" />
           {t("project_label")}
         </div>
-        <h3 className="mt-4 text-xl font-semibold tracking-tight text-slate-900">{title}</h3>
+        <h3 className="mt-4 text-xl font-semibold tracking-tight text-slate-900">
+          {title}
+        </h3>
         <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
       </div>
       <div className="mt-6 flex flex-wrap gap-2">

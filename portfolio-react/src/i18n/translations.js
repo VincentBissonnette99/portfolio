@@ -25,7 +25,8 @@ export const translations = {
     project_features: "Fonctionnalités clés",
     project_details: "Détails du projet",
     project_screenshots: "Captures d’écran",
-    project_screenshots_missing: "Aucune capture d’écran disponible pour le moment.",
+    project_screenshots_missing:
+      "Aucune capture d’écran disponible pour le moment.",
     project_not_found: "Projet introuvable",
     project_not_found_desc: "Ce projet n’existe pas ou a été retiré.",
     projects_back: "Retour aux projets",
@@ -151,7 +152,8 @@ export const translations = {
     project_screenshots: "Screenshots",
     project_screenshots_missing: "No screenshots available yet.",
     project_not_found: "Project not found",
-    project_not_found_desc: "This project does not exist or may have been removed.",
+    project_not_found_desc:
+      "This project does not exist or may have been removed.",
     projects_back: "Back to projects",
     lang_fr: "Français",
     lang_en: "English",

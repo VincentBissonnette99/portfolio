@@ -5,7 +5,14 @@ export const projectsByLang = {
       title: "Application Exercices Personnes Agées",
       description:
         "Solution full-stack pour créer et exporter des programmes d’exercices personnalisés à partir de résultats de tests physiques seniors.",
-      tags: ["React", "TypeScript", "Node.js", "Express", "PDF-lib", "Sequelize"],
+      tags: [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PDF-lib",
+        "Sequelize",
+      ],
       features: [
         "Génération automatique de programmes d’exercices personnalisés selon les résultats de tests.",
         "Export PDF des programmes grâce à PDF-lib.",
@@ -26,7 +33,15 @@ export const projectsByLang = {
       title: "NHL Live Scores",
       description:
         "Application Android native présentant les scores de la LNH en direct, les périodes en cours et un rafraîchissement manuel intuitif.",
-      tags: ["Kotlin", "Jetpack Compose", "MVVM", "Retrofit", "Moshi", "Coroutines", "OkHttp"],
+      tags: [
+        "Kotlin",
+        "Jetpack Compose",
+        "MVVM",
+        "Retrofit",
+        "Moshi",
+        "Coroutines",
+        "OkHttp",
+      ],
       features: [
         "Intégration avec l’API publique NHL pour obtenir les matchs du jour.",
         "Affichage en direct du statut de match, période en cours et temps restant.",
@@ -69,7 +84,14 @@ export const projectsByLang = {
       title: "Exercise App for Seniors",
       description:
         "Full-stack application for generating and exporting personalized exercise programs from senior fitness test results.",
-      tags: ["React", "TypeScript", "Node.js", "Express", "PDF-lib", "Sequelize"],
+      tags: [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "PDF-lib",
+        "Sequelize",
+      ],
       features: [
         "Automatic generation of customized exercise programs from test results.",
         "PDF export of programs using PDF-lib.",
@@ -90,7 +112,15 @@ export const projectsByLang = {
       title: "NHL Live Scores",
       description:
         "Native Android app displaying real-time NHL game scores, current period state and manual refresh with Jetpack Compose.",
-      tags: ["Kotlin", "Jetpack Compose", "MVVM", "Retrofit", "Moshi", "Coroutines", "OkHttp"],
+      tags: [
+        "Kotlin",
+        "Jetpack Compose",
+        "MVVM",
+        "Retrofit",
+        "Moshi",
+        "Coroutines",
+        "OkHttp",
+      ],
       features: [
         "Connects to the public NHL API for current day game data.",
         "Shows live game status, current period, remaining time, and final results.",
